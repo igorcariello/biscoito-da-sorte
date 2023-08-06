@@ -1,0 +1,165 @@
+/*font-family: 'Dancing Script', cursive;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62%;
+}
+
+.hide{
+  display: none;
+}
+
+body{
+  height: 100vh;
+  background: linear-gradient(45deg, #190361 0%, #B0F 100%) no-repeat;
+  border: black solid 1px;
+
+  display: grid;
+}
+
+main{
+  margin: 5% auto 60%;
+  min-width: min(42rem, 90%);
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  
+  border-radius: 5px;
+  background: #FFF;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+
+}
+
+
+
+h1{
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  line-height: normal;
+  text-align: center;
+
+  width: 25.8rem;
+
+  margin: 0 auto;
+  color: #34355B;
+  
+}
+
+.screen1 p{
+  margin: 1.4rem auto 2rem;
+  text-align: center;
+
+  color: #34355B;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.screen1 img{
+  margin: 0 auto;
+  display: block;
+
+}
+
+.screen1 img:hover{
+  animation: vibrate-1 0.2s linear infinite ;
+}
+
+.screen2{
+  width: 29.7rem;
+}
+
+h2{
+  color: #34355B;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 1.7rem;
+}
+
+.screen2 p{
+  color: #000;
+  text-align: center;
+  font-family: 'Dancing Script',sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  background: #E4EDF1;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+  margin-bottom: 6rem;
+
+  
+  animation: slide-fwd-top 2s linear both;
+
+
+}
+
+.screen2 img{
+  margin-bottom: 6rem;
+}
+
+button{
+  border-radius: 4px;
+  color: #FFF;
+  text-align: center;
+  font-family: 'DM Sans', sans-serif; 
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  background: #FF9500;;
+
+
+  width: 18rem;
+  height: 5.2rem;
+  border: none;
+  padding: 1.6rem;
+  
+  display: block;
+  margin: 0 auto;
+}
+
+@keyframes vibrate-1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-.2rem, .2rem);
+  }
+  40% {
+    transform: translate(-.2rem, -.2rem);
+  }
+  60% {
+    transform: translate(.2rem, .2rem);
+  }
+  80% {
+    transform: translate(.2rem, -.2rem);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+
+@keyframes slide-fwd-top {
+  0% {
+    transform: translateZ(0) translateY(20rem) scale(0.2%);
+  }
+  100% {
+    transform: translateZ(16rem) translateY(0);
+  }
+}
+
